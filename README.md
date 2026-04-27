@@ -1,98 +1,64 @@
-# 📚 Kutuphane Yönetim Sistemi (C# WinForms & ADO.NET)
+# 📚 Kutuphane Management System (C# WinForms & ADO.NET)
 
-## 📌 Proje Açıklaması
+## 📌 Project Description
 
-Bu proje, C# Windows Forms kullanılarak geliştirilmiş katmanlı mimariye sahip bir kütüphane yönetim sistemidir.
+This project is a layered library management system developed using C# Windows Forms.
 
-Uygulama, MSSQL veritabanı ile çalışır ve ADO.NET kullanılarak tüm veritabanı işlemleri manuel olarak yönetilmiştir.
+The application works with an MSSQL database, and all database operations are handled manually using ADO.NET.
 
-En önemli özelliklerinden biri, uygulamanın ilk çalıştırıldığında otomatik olarak:
+One of the key features of this project is that when it is first launched, it automatically:
 
-* Veritabanını oluşturması
-* Gerekli tabloları kurması
-* Sistem için başlangıç verilerini hazırlamasıdır
+- Creates the database
+- Creates the required tables
+- Prepares initial system data
 
-## 🏗️ Mimari Yapı
+## 🏗️ Architecture
 
-Proje katmanlı mimari ile geliştirilmiştir:
+The project is developed using a layered architecture:
 
-* **DAL (Data Access Layer)** → Veritabanı işlemleri
-* **BLL (Business Logic Layer)** → İş kuralları
-* **EL (Entity Layer)** → Veri modelleri
-* **UI (Windows Forms)** → Kullanıcı arayüzü
+- **DAL (Data Access Layer)** → Database operations
+- **BLL (Business Logic Layer)** → Business rules
+- **EL (Entity Layer)** → Data models
+- **UI (Windows Forms)** → User interface
 
-## 🚀 Özellikler
+## 🚀 Features
 
-* 📊 Kitap ekleme, silme, güncelleme (CRUD)
-* 👤 Üye yönetimi
-* 🔐 Kullanıcı ve yetki sistemi
-* 📚 Kitap ödünç alma ve iade işlemleri
-* 💰 Gecikme cezası hesaplama
-* 🗄️ MSSQL veritabanı entegrasyonu
-* ⚙️ Otomatik veritabanı ve tablo oluşturma
-* 🔌 Dinamik bağlantı yönetimi
+- 📊 Add, update, delete books (CRUD)
+- 👤 Member management
+- 🔐 User and role system
+- 📚 Borrow and return books
+- 💰 Late return penalty calculation
+- 🗄️ MSSQL database integration
+- ⚙️ Automatic database and table creation
+- 🔌 Dynamic connection management
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used
 
-* C#
-* Windows Forms
-* MSSQL
-* ADO.NET
-* SQL (manuel sorgular)
+- C#
+- Windows Forms
+- MSSQL
+- ADO.NET
+- SQL (manual queries)
 
-## ⚙️ Otomatik Kurulum Mantığı
+## ⚙️ Database Initialization
 
-Uygulama ilk çalıştırıldığında:
+When the application starts:
 
-1. MSSQL bağlantısı kontrol edilir
-2. Eğer `KutuphaneDB` veritabanı yoksa oluşturulur
-3. Gerekli tablolar otomatik olarak oluşturulur:
+1. MSSQL connection is checked
+2. If `KutuphaneDB` does not exist, it is created
+3. Required tables are automatically created:
+   - Books
+   - Members
+   - Users
+   - Loans
+   - Transactions
+4. System becomes ready to use
 
-   * Kitaplar
-   * Uyeler
-   * Kullanicilar
-   * Emanetler
-   * Haraketler
-4. Sistem başlangıç için hazır hale getirilir
+## 🔐 Configuration
 
-5. ## 🔐 Configuration
+Before running the project, update the database connection string according to your local MSSQL setup:
 
-Before running the project, update the database connection string according to your local MSSQL setup.
-
-Example:
-
+```txt
 Data Source=YOUR_SERVER_NAME;
 Initial Catalog=KutuphaneDB;
 Integrated Security=True;
-
-## 💻 Nasıl Çalıştırılır?
-
-1. MSSQL Server kurulu olmalıdır
-2. Projeyi klonlayın:
-
-   ```bash
-   git clone <repo-link>
-   ```
-3. Visual Studio ile açın
-4. Bağlantı ayarlarını kontrol edin
-5. Uygulamayı çalıştırın
-
-## 💡 Öğrendiklerim
-
-Bu proje ile:
-
-* ADO.NET ile manuel veritabanı yönetimi
-* Katmanlı mimari kullanımı
-* SQL sorguları yazma ve optimize etme
-* Gerçek dünya senaryoları için iş mantığı geliştirme
-
-## 📄 Not
-
-Bu proje eğitim ve staj sürecinde geliştirilmiştir.
-
-## 🧠 Developer Notes
-This is one of my first projects where I learned how to use ADO.NET and layered architecture.
-
-While developing this project, I focused on understanding how database connections work and how to manage SQL queries manually.
-
-Some parts of the project can be improved, and I plan to refactor it in the future.

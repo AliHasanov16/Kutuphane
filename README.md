@@ -55,6 +55,16 @@ Uygulama ilk çalıştırıldığında:
    * Haraketler
 4. Sistem başlangıç için hazır hale getirilir
 
+5. ## 🔐 Configuration
+
+Before running the project, update the database connection string according to your local MSSQL setup.
+
+Example:
+
+Data Source=YOUR_SERVER_NAME;
+Initial Catalog=KutuphaneDB;
+Integrated Security=True;
+
 ## 💻 Nasıl Çalıştırılır?
 
 1. MSSQL Server kurulu olmalıdır

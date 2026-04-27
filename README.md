@@ -62,3 +62,11 @@ Before running the project, update the database connection string according to y
 Data Source=YOUR_SERVER_NAME;
 Initial Catalog=KutuphaneDB;
 Integrated Security=True;
+
+## 🧠 Developer Notes
+
+This is one of my first projects where I learned how to use ADO.NET and layered architecture.
+
+While developing this project, I focused on understanding how database connections work and how to manage SQL queries manually.
+
+Some parts of the project can be improved, and I plan to refactor it in the future.

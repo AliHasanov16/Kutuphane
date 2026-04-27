@@ -1,12 +1,12 @@
-# 📚 Kutuphane Management System (C# WinForms & ADO.NET)
+# 📚 Library Management System (C# WinForms & ADO.NET)
 
 ## 📌 Project Description
 
 This project is a layered library management system developed using C# Windows Forms.
 
-The application works with an MSSQL database, and all database operations are handled manually using ADO.NET.
+The application uses an MSSQL database, and all database operations are manually handled using ADO.NET.
 
-One of the key features of this project is that when it is first launched, it automatically:
+One of the key features of this project is that on first launch, it automatically:
 
 - Creates the database
 - Creates the required tables
@@ -23,14 +23,14 @@ The project is developed using a layered architecture:
 
 ## 🚀 Features
 
-- 📊 Add, update, delete books (CRUD)
+- 📊 Add, update, delete books (CRUD operations)
 - 👤 Member management
-- 🔐 User and role system
-- 📚 Borrow and return books
+- 🔐 User and authorization system
+- 📚 Borrow and return book operations
 - 💰 Late return penalty calculation
 - 🗄️ MSSQL database integration
 - ⚙️ Automatic database and table creation
-- 🔌 Dynamic connection management
+- 🔌 Dynamic connection handling
 
 ## 🛠️ Technologies Used
 
@@ -45,28 +45,24 @@ The project is developed using a layered architecture:
 When the application starts:
 
 1. MSSQL connection is checked
-2. If `KutuphaneDB` does not exist, it is created
-3. Required tables are automatically created:
+2. If `KutuphaneDB` does not exist, it is automatically created
+3. Required tables are generated:
+
    - Books
    - Members
    - Users
    - Loans
    - Transactions
-4. System becomes ready to use
+
+4. The system becomes ready to use
 
 ## 🔐 Configuration
 
 Before running the project, update the database connection string according to your local MSSQL setup:
 
+Example:
+
 ```txt
 Data Source=YOUR_SERVER_NAME;
 Initial Catalog=KutuphaneDB;
 Integrated Security=True;
-
-## 🧠 Developer Notes
-
-This is one of my first projects where I learned how to use ADO.NET and layered architecture.
-
-While developing this project, I focused on understanding how database connections work and how to manage SQL queries manually.
-
-Some parts of the project can be improved, and I plan to refactor it in the future.

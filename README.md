@@ -56,6 +56,33 @@ When the application starts:
 
 4. The system becomes ready to use
 
+## 💻 How to Run
+Ensure MSSQL Server is installed
+Clone the repository:
+git clone <repo-link>
+Open the project in Visual Studio
+Verify database connection settings
+Run the application
+## 💡 Key Learnings
+
+Through this project, I gained hands-on experience in:
+
+Manual database management using ADO.NET
+Layered architecture design and implementation
+Writing and optimizing SQL queries
+Developing real-world business logic scenarios
+📄 Note
+
+This project was developed during my education and internship period.
+
+## 🧠 Developer Notes
+
+This is one of my first projects where I learned how to work with ADO.NET and layered architecture.
+
+During development, I focused on understanding database connectivity, SQL query execution, and structuring a maintainable multi-layer architecture.
+
+Although the project works as intended, there are areas that can be improved, and I plan to refactor and enhance it in the future.
+
 ## 🔐 Configuration
 
 Before running the project, update the database connection string according to your local MSSQL setup:
@@ -66,3 +93,4 @@ Example:
 Data Source=YOUR_SERVER_NAME;
 Initial Catalog=KutuphaneDB;
 Integrated Security=True;
+

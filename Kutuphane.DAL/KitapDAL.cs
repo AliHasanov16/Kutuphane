@@ -15,7 +15,7 @@ namespace Kutuphane.DAL
 {   
 	public class KitapDAL
 	{
-		SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-CU679RN\SQLEXPRESS01;Initial Catalog=KutuphaneDB;Integrated Security=True;Trust Server Certificate=True");
+		SqlConnection baglanti = new SqlConnection(@"Data Source=YOUR_SERVER;Initial Catalog=YOUR_DB;User Id=sa;Password=YOUR_PASSWORD;Integrated Security=True;TrustServerCertificate=True");
 
 		public KitapDAL() { }
 

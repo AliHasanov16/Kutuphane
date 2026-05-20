@@ -58,7 +58,7 @@ namespace Kutuphane.DAL
 				string sorgu = @"IF DB_ID('KutuphaneDB') IS NULL CREATE DATABASE KutuphaneDB";
 				//Bir DATABASE olmadığı icin onceden sistem database olan MASTER DB'sıne bagğalnıp KutuphneDb oluşturulur .
 				//Ondan Sonra TumTablola Create edilir . Olmayan dbye create table olmaz .
-				SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-CU679RN\SQLEXPRESS01;Initial Catalog=master;Integrated Security=True;Trust Server Certificate=True");
+				SqlConnection baglanti = new SqlConnection(@"Data Source=YOUR_SERVER;Initial Catalog=master;Integrated Security=True;Trust Server Certificate=True");
 				baglanti.Open();
 				using (SqlCommand komut = new SqlCommand(sorgu, baglanti)){
 					komut.ExecuteNonQuery();
@@ -153,7 +153,7 @@ namespace Kutuphane.DAL
                                 END
                                 SELECT @Sonuc;";
 
-				SqlConnection baglanti2 = new SqlConnection(@"Data Source=DESKTOP-CU679RN\SQLEXPRESS01;Initial Catalog=KutuphaneDB;Integrated Security=True;Trust Server Certificate=True");
+				SqlConnection baglanti2 = new SqlConnection(@"Data Source=YOUR_SERVER;Initial Catalog=master;User Id=sa;Password=YOUR_PASSWORD;Integrated Security=True;Trust Server Certificate=True");
 				baglanti2.Open();
 				using (SqlCommand komut2 = new SqlCommand(sorgu2, baglanti2)){
 					object deger=komut2.ExecuteScalar();
@@ -166,7 +166,7 @@ namespace Kutuphane.DAL
 			}
             finally
             {
-				SqlConnection baglanti2 = new SqlConnection(@"Data Source=DESKTOP-CU679RN\SQLEXPRESS01;Initial Catalog=KutuphaneDB;Integrated Security=True;Trust Server Certificate=True");
+				SqlConnection baglanti2 = new SqlConnection(@"Data Source=YOUR_SERVER;Initial Catalog==master;User Id=sa;Password=YOUR_PASSWORD;Integrated Security=True;Trust Server Certificate=True");
                 if(baglanti2.State == ConnectionState.Open) baglanti2.Close();
 			}
 		}

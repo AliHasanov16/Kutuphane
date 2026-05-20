@@ -40,6 +40,13 @@ The project is developed using a layered architecture:
 - ADO.NET
 - SQL (manual queries)
 
+## 📋 Requirements
+
+- Visual Studio 2022
+- .NET Framework 4.7.2
+- Microsoft SQL Server
+- SQL Server Management Studio (optional)
+
 ## ⚙️ Database Initialization
 
 When the application starts:
@@ -77,11 +84,17 @@ This project was developed during my education and internship period.
 
 ## 🧠 Developer Notes
 
-This is one of my first projects where I learned how to work with ADO.NET and layered architecture.
+This project was developed to strengthen my understanding of ADO.NET, MSSQL integration, and layered architecture principles.
 
-During development, I focused on understanding database connectivity, SQL query execution, and structuring a maintainable multi-layer architecture.
+During development, I focused on:
 
-Although the project works as intended, there are areas that can be improved, and I plan to refactor and enhance it in the future.
+- Database connection management
+- SQL query execution
+- CRUD operations
+- Structuring scalable multi-layer architecture
+- Real-world business logic implementation
+
+There are still areas for improvement, and I plan to continue refactoring and enhancing the project over time.
 
 ## 🔐 Configuration
 

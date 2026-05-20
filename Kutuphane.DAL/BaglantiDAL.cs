@@ -166,7 +166,7 @@ namespace Kutuphane.DAL
 			}
             finally
             {
-				SqlConnection baglanti2 = new SqlConnection(@"Data Source=YOUR_SERVER;Initial Catalog==master;User Id=sa;Password=YOUR_PASSWORD;Integrated Security=True;Trust Server Certificate=True");
+				SqlConnection baglanti2 = new SqlConnection(@"Data Source=YOUR_SERVER;Initial Catalog=master;User Id=sa;Password=YOUR_PASSWORD;Integrated Security=True;Trust Server Certificate=True");
                 if(baglanti2.State == ConnectionState.Open) baglanti2.Close();
 			}
 		}

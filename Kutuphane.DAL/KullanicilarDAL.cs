@@ -18,7 +18,7 @@ namespace Kutuphane.DAL
     public class KullanicilarDAL
     {
         //SQL'Den veri alışverişi yapmamızı sağlar . veritabanı ile ilişki kurar .
-		SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-CU679RN\SQLEXPRESS01;Initial Catalog=KutuphaneDB;Integrated Security=True;Trust Server Certificate=True");
+		SqlConnection baglanti = new SqlConnection(@"Data Source=YOUR_SERVER;Initial Catalog=master;Integrated Security=True;Trust Server Certificate=True");
 
 		public KullanicilarDAL() { }
         //Kullanıcıları datagriwView'e DAL ile cağırma . DAL tarafı DAL-->BLL-->UI
